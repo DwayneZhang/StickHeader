@@ -11,6 +11,17 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ * @author Dwayne
+ * @email dev1024@foxmail.com
+ * @time 20/2/17 14:10
+ * @change
+ * @chang time
+ * @class describe
+ */
+
+
 public class MainActivity extends AppCompatActivity {
 
     LinearLayout stickyHeader;
@@ -23,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         stickyHeader = findViewById(R.id.sticky_header);
-        recyclerView = findViewById(R.id.recycler_view);
         tvHeader = findViewById(R.id.tv_header);
+        recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         itemAdapter = new ItemAdapter(this, generateData());
         recyclerView.setAdapter(itemAdapter);
